@@ -72,19 +72,42 @@ div#container {
     /*outline: 5px dashed red;*/
 }
 
-@media screen and (max-width: 600px ) {
+/* max-width changed to tablet size (chrome recommended) */
+
+@media screen and (max-width: 768px ) {
     aside {
+	/* The commented code below
+	 * is not needed
+	 * as it's already defined
+	 */
+	/*
 	display:block;
 	box-sizing:border-box;
 	background-color:tomato;
 	font-family: cursive;
+	*/
 	margin: auto;
 	padding: 0.5%;
+	/* The code below
+	 * undos previous settings
+	 */
+        float: none;
+	width: initial;
+	height: initial;
+
     }
     div#container {
 	margin: auto;
 	padding: 0.5%;
-	background-color: skyblue;
+	/* Not needed as already defined */
+	/* background-color: skyblue; */
+	/* The code below
+	 * undos previous settings
+	 */
+	margin-right: initial;
+	float: none;
+	width: initial;
+
     }
 
 }
