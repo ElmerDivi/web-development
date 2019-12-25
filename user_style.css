@@ -1,90 +1,113 @@
 body {
-	/*background-color: olivedrab;*/
-	font-family: sans-serif;
-	margin: 0px; 
-	}
-	div#wrapper {
-    	position: relative;
-    	top: 60px;
-	}
-	nav {
-		font-family: cursive;
-    	position: fixed;
-    	top: 0px;
-    	left: 0px;
-    	z-index:1;
-    	-webkit-box-shadow: 6px 6px 6px #666;
-		-moz-box-shadow: 6px 6px 6px #666;
-		box-shadow: 6px 6px 6px #666;
-		float: left;
-    	height:60px;
-		width: 100%;
-		background-color: yellowgreen;
-		padding: 0%;
+    /*background-color: olivedrab;*/
+    font-family: sans-serif;
+    margin: 0px;
+}
+div#wrapper {
+    position: relative;
+    top: 60px;
+}
+nav {
+    font-family: cursive;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index:1;
+    -webkit-box-shadow: 6px 6px 6px #666;
+    -moz-box-shadow: 6px 6px 6px #666;
+    box-shadow: 6px 6px 6px #666;
+    float: left;
+    height:60px;
+    width: 100%;
+    background-color: yellowgreen;
+    padding: 0%;
     /*outline: 5px dashed purple;*/
-	}
-	ul {
-		list-style-type: none;
-		margin: 0px;
-		padding:0px;
-	}
-	nav ul {
-		list-style-type: none;
-    	margin: 0px;
-		padding: 0px;
-    	/*outline: 2px dashed orange;*/
-	}
-	nav ul li {
-		float: left;
-		width: 20%;
-		margin: 1%;
-		padding: 1%;
-		border-right: dashed 1px gray;
-   	 /*outline: 3px dashed blue;*/
-	}
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding:0px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    /*outline: 2px dashed orange;*/
+}
+nav ul li {
+    float: left;
+    width: 20%;
+    margin: 1%;
+    padding: 1%;
+    border-right: dashed 1px gray;
+    /*outline: 3px dashed blue;*/
+}
 
-	#bottom{
-		margin-top: 0;
-		background-color: gold;
-		padding: 2%;
-		clear: both;
-	}
-	aside {
-    	display:block;
-    	box-sizing:border-box;
-    	background-color:tomato;
-		font-family: cursive;
-		clear: left;
-		margin: 0.10%;
-		padding: 0.25%;
-		float:left;
-		width: 23%;
-    	/*outline: dashed 5px yellow;*/
-    	height: 728.33px;
-	}
-	div#container {
-		margin: 0.25%; 
-		margin-right: 0.10%;
-		padding: 0.25%;
-		background-color: skyblue;
-		float: left;
-		width: 75%;
-    	/*outline: 5px dashed red;*/
-	}
+#bottom{
+    margin-top: 0;
+    background-color: gold;
+    padding: 2%;
+    clear: both;
+}
+aside {
+    display:block;
+    box-sizing:border-box;
+    background-color:tomato;
+    font-family: cursive;
+    clear: left;
+    margin: 0.10%;
+    padding: 0.25%;
+    float:left;
+    width: 23%;
+    /*outline: dashed 5px yellow;*/
+    height: 728.33px;
+}
+div#container {
+    margin: 0.25%;
+    margin-right: 0.10%;
+    padding: 0.25%;
+    background-color: skyblue;
+    float: left;
+    width: 75%;
+    /*outline: 5px dashed red;*/
+}
 
-@media screen and (max-width: 600px ) {
-	aside {
-    	display:block;
-    	box-sizing:border-box;
-    	background-color:tomato;
-		font-family: cursive;
-		margin: auto;
-		padding: 0.5%;
-	}
-	div#container {
-		margin: auto; 
-		padding: 0.5%;
-		background-color: skyblue;
-	}
+/* max-width changed to tablet size (chrome recommended) */
+
+@media screen and (max-width: 768px ) {
+    aside {
+	/* The commented code below
+	 * is not needed
+	 * as it's already defined
+	 */
+	/*
+	display:block;
+	box-sizing:border-box;
+	background-color:tomato;
+	font-family: cursive;
+	*/
+	margin: auto;
+	padding: 0.5%;
+	/* The code below
+	 * undos previous settings
+	 */
+        float: none;
+	width: initial;
+	height: initial;
+
+    }
+    div#container {
+	margin: auto;
+	padding: 0.5%;
+	/* Not needed as already defined */
+	/* background-color: skyblue; */
+	/* The code below
+	 * undos previous settings
+	 */
+	margin-right: initial;
+	float: none;
+	width: initial;
+
+    }
 
 }
