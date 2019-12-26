@@ -29,6 +29,10 @@
 	background-color: skyblue;
       }
       a:active {
+	/* Since box-shadow was delayed in transition
+	   Essential to reset to see the effect
+	 */
+	transition: box-shadow 0s;
 	box-shadow: none;
       }
     </style>
